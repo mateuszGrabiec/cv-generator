@@ -1,0 +1,33 @@
+{
+  "name": "rockstar-cv",
+  "version": "1.0.0",
+  "description": "generete cv from json file",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -e js,html app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "app.js",
+      "src/*"
+    ],
+    "ext": "js,html",
+    "ignore": [
+      "build/*"
+    ]
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "jsdom": "^21.1.0",
+    "jspdf": "^2.5.1",
+    "mustache": "^4.2.0",
+    "puppeteer": "^19.7.1"
+  }
+}
